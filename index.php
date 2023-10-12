@@ -35,10 +35,17 @@
                 </div>
                 <div class="row">
                     <?php
+                            $array = array(
 
+                            
+                                'posts_per_page' => 10,
 
-                            if (have_posts()) {
-                                while (have_posts()) : the_post(); 
+                            
+                            );
+                            $query=new WP_Query($array);
+
+                            if ($query->have_posts()) {
+                                while ($query->have_posts()) : $query->the_post(); 
 
                                 ?>
                     <div class="col-md-4">
@@ -48,7 +55,6 @@
                             <div class="card-body">
                                 <div class="post-meta mb-2">
                                     <ul class="list-inline meta-list">
-                                        <li class="list-inline-item"><?php the_post()?></li>
                                     </ul>
                                 </div>
                                 <h3 class="h5 card-title"><a href="<?php the_permalink()?>"><?PHP the_title()?></a></h3>
