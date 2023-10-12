@@ -35,17 +35,10 @@
                 </div>
                 <div class="row">
                     <?php
-                            $array = array(
 
-                            
-                                'posts_per_page' => 10,
 
-                            
-                            );
-                            $query=new WP_Query($array);
-
-                            if ($query->have_posts()) {
-                                while ($query->have_posts()) : $query->the_post(); 
+                            if (have_posts()) {
+                                while (have_posts()) : the_post(); 
 
                                 ?>
                     <div class="col-md-4">
@@ -72,20 +65,39 @@
                 </div>
 
                 <!--pagination start-->
+
+
                 <div class="row">
-                    <div class="col-md-12">
-                        <nav class="custom-pagination-nav mt-4">
-                            <ul class="pagination justify-content-center">
-                                <li class="page-item"><a class="page-link" href="#"><span class="ti-angle-right"></span></a></li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#"><span class="ti-angle-left"></span></a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+    <div class="col-md-12">
+        <nav class="<?php echo esc_attr('custom-pagination-nav mt-4'); ?>">
+            <ul class="<?php echo esc_attr('pagination justify-content-center'); ?>">
+                <?php
+                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                $args = array(
+                    'posts_per_page' => 4,
+                    'paged' => $paged,
+                );
+                $query = new WP_Query($args);
+                $total_pages = $query->max_num_pages;
+
+                if ($total_pages > 1) {
+                    echo '<li class="page-item"><a class="page-link" href="' . esc_url(get_pagenum_link($paged - 1)) . '"><span class="ti-angle-left"></span></a></li>';
+
+                    for ($i = 1; $i <= $total_pages; $i++) {
+                        echo '<li class="page-item ' . (($paged == $i) ? 'active' : '') . '"><a class="page-link" href="' . esc_url(get_pagenum_link($i)) . '">' . esc_html($i) . '</a></li>';
+                    }
+
+                    echo '<li class="page-item"><a class="page-link" href="' . esc_url(get_pagenum_link($paged + 1)) . '"><span class="ti-angle-right"></span></a></li>';
+                }
+                ?>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+
+
                 <!--pagination end-->
 
             </div>
