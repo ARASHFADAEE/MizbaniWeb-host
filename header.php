@@ -13,7 +13,7 @@
 <body>
 
     <!--loader start-->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="loader1">
             <span></span>
             <span></span>
@@ -21,7 +21,7 @@
             <span></span>
             <span></span>
         </div>
-    </div>
+    </div> -->
     <!--loader end-->
     <!--header section start-->
     <header id="header" class="header-main">

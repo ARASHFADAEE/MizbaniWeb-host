@@ -35,17 +35,10 @@
                 </div>
                 <div class="row">
                     <?php
-                            $array = array(
 
-                            
-                                'posts_per_page' => 10,
 
-                            
-                            );
-                            $query=new WP_Query($array);
-
-                            if ($query->have_posts()) {
-                                while ($query->have_posts()) : $query->the_post(); 
+                            if (have_posts()) {
+                                while (have_posts()) : the_post(); 
 
                                 ?>
                     <div class="col-md-4">
@@ -56,10 +49,9 @@
                                 <div class="post-meta mb-2">
                                     <ul class="list-inline meta-list">
                                         <li class="list-inline-item"><?php the_post()?></li>
-                                        <li class="list-inline-item"><span><?php get_comments_number( $post->ID )?></span> کامنت</li>
                                     </ul>
                                 </div>
-                                <h3 class="h5 card-title"><a href="#"><?PHP the_title()?></a></h3>
+                                <h3 class="h5 card-title"><a href="<?php the_permalink()?>"><?PHP the_title()?></a></h3>
                                 <p class="card-text"><?php the_excerpt() ?></p>
                                 <a href="<?php the_permalink()?>" class="detail-link">ادامه مطلب <span class="ti-arrow-left"></span></a>
                             </div>
