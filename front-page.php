@@ -194,28 +194,6 @@
 
         <!--services section end-->
 
-        <!--call to action section start-->
-        <section class="call-to-action ptb-100 gradient-overlay" style="background: url('<?php echo  get_template_directory_uri()?>/assets/img/hero-bg-4.jpg')no-repeat center center / cover">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-9">
-                        <div class="call-to-action-content text-white text-center">
-                            <h2 class="text-white">به کمک نیاز دارید؟</h2>
-                            <p class="lead mb-0">خواه گیر کرده اید یا فقط می خواهید نکاتی در مورد اینکه از کجا شروع کنید، با کارشناسان ما تماس بگیرید.</p>
-                            <p>پشتیبانی فروش: <strong> شنبه-جمعه 8 صبح-4ب.ظ</strong> | پشتیبانی مشتری: همه روزه <strong>
-                            5:30 صبح-2:30ب.ظ</strong></p>
-                            <div class="action-btns">
-                                <a href="#" class="btn solid-white-btn mr-3">مشاوره</a>
-                                <a href="#" class="btn outline-white-btn">ارسال ایمیل</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!--call to action section end-->
 
         <!--pricing with switch section start-->
         <section class="pricing-section ptb-100">
