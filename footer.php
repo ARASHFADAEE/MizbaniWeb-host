@@ -172,3 +172,5 @@
     <script src="<?php echo get_template_directory_uri()?>/assets/js/vendors/hs.megamenu.js"></script>
     <script src="<?php echo get_template_directory_uri()?>/assets/js/app.js"></script>
     <!--endbuild-->
+
+    <?php wp_footer()?>
