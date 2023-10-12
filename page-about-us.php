@@ -3,7 +3,7 @@
     <div class="main">
 
         <!--page header section start-->
-        <section class="page-header-section ptb-100 gradient-overly-left" style="background: url('assets/img/hero-14.jpg')no-repeat center center / cover">
+        <section class="page-header-section ptb-100 gradient-overly-left" style="background: url('<?php echo get_template_directory_uri()?>/assets/img/hero-14.jpg')no-repeat center center / cover">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-7 col-lg-6">
@@ -41,7 +41,7 @@
                 <div class="row">
                     <div class="col-xl-4 col-lg-3 col-12 order-lg-last align-self-center">
                         <div class="image-box fadein text-xl-right text-center">
-                            <img src="assets/img/icon-shared-hosting.svg" alt="wp-hosting" class="img-fluid" />
+                            <img src="<?php echo get_template_directory_uri()()?>/assets/img/icon-shared-hosting.svg" alt="wp-hosting" class="img-fluid" />
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-9 col-12 order-xl-first">
@@ -120,7 +120,7 @@
                                     <span data-toggle="tooltip" data-placement="top" title="استرالیا"></span>
                                 </li>
                             </ul>
-                            <img src="assets/img/map-dark.svg" alt="location map">
+                            <img src="<?php echo get_template_directory_uri()()?>/assets/img/map-dark.svg" alt="location map">
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@
         <!--network map section end-->
 
         <!--call to action section start-->
-        <section class="call-to-action ptb-100 gradient-overly-bottom" style="background: url('assets/img/hero-bg-4.jpg')no-repeat center center / cover fixed">
+        <section class="call-to-action ptb-100 gradient-overly-bottom" style="background: url('<?php echo get_template_directory_uri()()?>/assets/img/hero-bg-4.jpg')no-repeat center center / cover fixed">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-9 col-lg-8">
@@ -249,7 +249,7 @@
                             <div class="item">
                                 <div class="staff-member">
                                     <div class="card text-center">
-                                        <img src="assets/img/team-1.jpg" alt="team image" class="card-img-top">
+                                        <img src="<?php echo get_template_directory_uri()()?>/assets/img/team-1.jpg" alt="team image" class="card-img-top">
                                         <div class="card-body">
                                             <h5 class="teacher mb-0">ریچارد فورد</h5>
                                             <span>طراح فرانت اند</span>
@@ -284,7 +284,7 @@
                             <div class="item">
                                 <div class="staff-member">
                                     <div class="card text-center">
-                                        <img src="assets/img/team-3.jpg" alt="team image" class="card-img-top">
+                                        <img src="<?php echo get_template_directory_uri()()?>/assets/img/team-3.jpg" alt="team image" class="card-img-top">
                                         <div class="card-body">
                                             <h5 class="h5 teacher mb-0">آنا اسمیت</h5>
                                             <span>مدیر امور مالی</span>
@@ -318,7 +318,7 @@
                             <div class="item">
                                 <div class="staff-member">
                                     <div class="card text-center">
-                                        <img src="assets/img/team-2.jpg" alt="team image" class="img-fluid">
+                                        <img src="<?php echo get_template_directory_uri()()?>/assets/img/team-2.jpg" alt="team image" class="img-fluid">
                                         <div class="card-body">
                                             <h5 class="teacher mb-0">فیلیپ ویلسون</h5>
                                             <span>مدیر بازاریابی</span>
@@ -353,7 +353,7 @@
                             <div class="item">
                                 <div class="staff-member">
                                     <div class="card text-center">
-                                        <img src="assets/img/team-4.jpg" alt="team image" class="img-fluid">
+                                        <img src="<?php echo get_template_directory_uri()()?>/assets/img/team-4.jpg" alt="team image" class="img-fluid">
                                         <div class="card-body">
                                             <h5 class="teacher mb-0">والش الکس</h5>
                                             <span>مدی شرکت</span>
@@ -388,7 +388,7 @@
                             <div class="item">
                                 <div class="staff-member">
                                     <div class="card text-center">
-                                        <img src="assets/img/team-6.jpg" alt="team image" class="card-img-top">
+                                        <img src="<?php echo get_template_directory_uri()()?>/assets/img/team-6.jpg" alt="team image" class="card-img-top">
                                         <div class="card-body">
                                             <h5 class="teacher mb-0">کالی کپور</h5>
                                             <span>مدیر عامل و بازاریاب</span>
@@ -423,7 +423,7 @@
                             <div class="item">
                                 <div class="staff-member">
                                     <div class="card text-center">
-                                        <img src="assets/img/team-5.jpg" alt="team image" class="img-fluid">
+                                        <img src="<?php echo get_template_directory_uri()()?>/assets/img/team-5.jpg" alt="team image" class="img-fluid">
                                         <div class="card-body">
                                             <h5 class="teacher mb-0">نانسی ایس</h5>
                                             <span>مدیر تولید</span>

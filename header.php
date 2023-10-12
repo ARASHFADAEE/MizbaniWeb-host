@@ -73,7 +73,7 @@
                     <div id="navBar" class="collapse navbar-collapse">
                         <ul class="navbar-nav ml-auto main-navbar-nav">
                             <!--home start-->
-                                <a id="homeMegaMenu" class="nav-link custom-nav-link " href="javascript:void(0);" aria-haspopup="true" aria-expanded="false">خانه</a>
+                                <a id="homeMegaMenu" class="nav-link custom-nav-link " href="<?php echo get_home_url()?>" aria-haspopup="true" aria-expanded="false">خانه</a>
                             </li>
                             <!--home end-->
 
@@ -224,7 +224,7 @@
 
                             <!--about start-->
                             <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px" data-position="right">
-                                <a id="aboutMegaMenu" class="nav-link custom-nav-link " href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">درباره ما </a>
+                                <a id="aboutMegaMenu" class="nav-link custom-nav-link " href="<?php echo get_home_url()?>/about-us" aria-haspopup="true" aria-expanded="false">درباره ما </a>
 
                             </li>
                             <!--about end-->
