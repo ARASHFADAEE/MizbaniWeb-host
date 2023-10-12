@@ -142,28 +142,33 @@
                             <!-- دسته ها widget-->
                             <aside class="widget widget-categories">
                                 <div class="widget-title">
-                                    <h6>دسته ها</h6>
+                                    <h6>دسته بندی مقالات</h6>
                                 </div>
                                 <ul>
-                                    <?php
-                                        $categories = get_categories(array(
-                                            'hide_empty' => true, 
-                                        ));
-                                    
-                                    ?>
-                                    <?php
-                                        foreach ($categories as $category){?>
+
+                                <?php
+    $categories = get_categories(array(
+        'post_type' => 'post',
+        'hide_empty' => false, // نمایش دسته‌بندی‌های خالی
+    ));
+
+    foreach ($categories as $category) {
+        $category_link = get_category_link($category->term_id);
+        echo  '<li><a href='.esc_url($category_link).'> '.esc_html($category->name).'<span class="float-right"></span></a></li>';
+
+    }
+    ?>
+ 
 
 
-                                    <li><a href="#"><?php $category->name?> <span class="float-right">112</span></a></li>
-<?php };?>
+
                                 </ul>
                             </aside>
 
                             <!-- Recent entries widget-->
                             <aside class="widget widget-recent-entries-custom">
                                 <div class="widget-title">
-                                    <h6>پست های اخیر</h6>
+                                    <h6>پست های اخیر میزبانی وب</h6>
                                 </div>
                                 <ul>
                                     <?php
@@ -211,7 +216,10 @@ endif;
                                 <div class="widget-title">
                                     <h6>تگ ها</h6>
                                 </div>
-                                <div class="tag-cloud"><a href="#">ای کامرس</a><a href="#">نمونه کار</a><a href="#">واکنشگرا</a><a href="#">بوت استرپ</a><a href="#">کار</a><a href="#">شرکت</a></div>
+                                <div class="tag-cloud">
+                                    <?php the_tags(' ')?>
+
+                                </div>
                             </aside>
                         </div>
                     </div>
