@@ -193,7 +193,7 @@
                                                         <div class="menu-item-icon"><i class="fas fa-server"></i></div>
                                                         <div class="media-body">
                                                             <span class="u-header__promo-title">میزبانی ووکامرس <span
-                                                                class="badge badge-primary ml-1">جدید</span></span>
+                                                                class="badge badge-primary ml-1">به زودی</span></span>
                                                             <small class="u-header__promo-text">شروع قیمت ها از
                                                                 <strong>99,000 تومانءءء/ماهانه</strong></small>
                                                         </div>
@@ -208,7 +208,13 @@
                                 <!-- End Demos - Mega Menu -->
                             </li>
                             <!--hosting end-->
+                            <!-- blog -->
+                            <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px" data-position="right">
+                                <a id="aboutMegaMenu" class="nav-link custom-nav-link " href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">وبلاگ میزبانی وب</a>
 
+                            </li>
+                            <!-- blog -->
+                            
 
                             <!--about start-->
                             <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px" data-position="right">
@@ -223,14 +229,8 @@
 
                             </li>
                             <!-- contact us -->
-                            
-                            <!-- blog -->
-                            <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px" data-position="right">
-                                <a id="aboutMegaMenu" class="nav-link custom-nav-link " href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">وبلاگ میزبانی وب</a>
 
-                            </li>
-                            <!-- blog -->
-                            
+
 
                             <!-- role -->
                                 <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px" data-position="right">
