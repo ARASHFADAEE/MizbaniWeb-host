@@ -223,15 +223,23 @@
 
                             </li>
                             <!-- contact us -->
+                            
+                            <!-- blog -->
+                            <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px" data-position="right">
+                                <a id="aboutMegaMenu" class="nav-link custom-nav-link " href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">وبلاگ میزبانی وب</a>
 
+                            </li>
+                            <!-- blog -->
+                            
 
-                            <!-- contact us  -->
+                            <!-- role -->
                                 <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px" data-position="right">
                                 <a id="aboutMegaMenu" class="nav-link custom-nav-link " href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">قوانین و مقررات</a>
 
                             </li>
-                            <!-- contact us -->
-                            
+                            <!-- role -->
+
+
                             <!--button start-->
                             <li class="nav-item header-nav-last-item d-flex align-items-center">
                                 <a class="btn primary-solid-btn animated-btn" href="#" target="_blank">
