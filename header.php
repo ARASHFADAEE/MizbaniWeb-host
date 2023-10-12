@@ -58,7 +58,7 @@
                 <nav class="js-mega-menu navbar navbar-expand-md header-nav">
 
                     <!--logo start-->
-                    <a class="navbar-brand" href="index.html"><img src="<?php echo get_template_directory_uri()?>/assets/img/logo-color.png" width="120" alt="logo" class="img-fluid" /></a>
+                    <a class="navbar-brand" href="<?php echo get_home_url() ?>"><img src="<?php echo get_template_directory_uri()?>/assets/img/logo-color.png" width="120" alt="logo" class="img-fluid" /></a>
                     <!--logo end-->
 
                     <!--responsive toggle button start-->
