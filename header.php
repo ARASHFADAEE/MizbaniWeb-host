@@ -7,23 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
-    <!--fonts-->
-    <link rel="stylesheet" href="assets/css/fonts.css">
-
-
-    <!--build:css-->
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/magnific.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/jq-slider.css">
-    <link rel="stylesheet" href="assets/css/jq-megamenu.css">
-    <link rel="stylesheet" href="assets/css/owlcarousel.css">
-    <link rel="stylesheet" href="assets/css/main-rtl.css">
-    <!-- endbuild -->
-    <link rel="stylesheet" href="assets/css/custom.css">
-
     <?php wp_head()?>
 </head>
 
