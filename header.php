@@ -215,6 +215,12 @@
                             </li>
                             <!-- blog -->
                             
+                            <!-- role -->
+                            <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px" data-position="right">
+                                <a id="aboutMegaMenu" class="nav-link custom-nav-link " href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">قوانین و مقررات</a>
+
+                            </li>
+                            <!-- role -->
 
                             <!--about start-->
                             <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px" data-position="right">
@@ -232,12 +238,6 @@
 
 
 
-                            <!-- role -->
-                                <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px" data-position="right">
-                                <a id="aboutMegaMenu" class="nav-link custom-nav-link " href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">قوانین و مقررات</a>
-
-                            </li>
-                            <!-- role -->
 
 
                             <!--button start-->
