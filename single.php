@@ -5,7 +5,7 @@
                         if ( have_posts() ) :
                             while ( have_posts() ) : the_post(); ?>
         
-        ?>
+
         <div class="breadcrumb-bar py-3 gray-light-bg border-bottom">
             <div class="container">
                 <div class="row">
@@ -31,35 +31,24 @@
                         <article class="post">
                             <div class="post-preview">
                                 <!-- <img src="assets/img/blog/1-w.jpg" alt="article" class="img-fluid" /></div> -->
-                                <?php the_post_thumbnail();?>
+                                <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid'])?>
                             <div class="post-wrapper">
                                 <div class="post-header">
-                                    <h1 class="post-title">چگونه از سایت تم فارست خرید کنیم؟</h1>
+                                    <h1 class="post-title"><?php the_title();?></h1>
                                     <ul class="post-meta">
-                                        <li>16 تیر، 1400</li>
-                                        <li>در <a href="#">برندینگ</a>, <a href="#">طراحی</a></li>
-                                        <li><a href="#">3 کامنت</a></li>
+                                        <li><?php the_date();?></li>
+                                        <li><?php the_category();?></li>
+                                        <li><a href="#"><?php get_comments_number($post->ID)?> کامنت</a></li>
                                     </ul>
                                 </div>
                                 <div class="post-content">
-                                    <p>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود.</p>
-                                    <p> این یک نوشته آزمایشی است که به طراحان و برنامه نویسان کمک میکند تا این عزیزان با بهره گیری از این نوشته تستی و آزمایشی بتوانند نمونه تکمیل شده از پروژه و طرح خودشان را به کارفرما نمایش دهند، استفاده از این متن تستی می تواند سرعت پیشرفت پروژه را افزایش دهد، و طراحان به جای تایپ و نگارش متن می توانند تنها با یک کپی و پست این متن را در کادرهای مختلف جایگزین نمائید. این نوشته توسط سایت لورم ایپسوم فارسی نگاشته شده است.</p>
-                                    <blockquote class="blockquote">
-                                        <p>هر نفسی که فرو می‌ بریم، مرگی را که مدام به ما دست‌ اندازی می‌کند پس می‌زند... در نهایت این مرگ است که باید پیروز شود، زیرا.</p>
-                                        <footer class="blockquote-footer">آماندا پولاگ، گوگل.</footer>
-                                    </blockquote>
-                                    <p>این یک نوشته آزمایشی است که به طراحان و برنامه نویسان کمک میکند تا این عزیزان با بهره گیری از این نوشته تستی و آزمایشی بتوانند نمونه تکمیل شده از پروژه و طرح خودشان را به کارفرما نمایش دهند، استفاده از این متن تستی می تواند سرعت پیشرفت پروژه را افزایش دهد، و طراحان به جای تایپ.</p>
-                                    <p>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود.</p>
-                                    <ol>
-                                        <li>استراتژی طراحی</li>
-                                        <li>توسعه اپلیکیشن</li>
-                                        <li>مدرن طراحی</li>
-                                    </ol>
-                                    <p>این یک نوشته آزمایشی است که به طراحان و برنامه نویسان کمک میکند تا این عزیزان با بهره گیری از این نوشته تستی و آزمایشی بتوانند نمونه تکمیل شده از پروژه و طرح خودشان را به کارفرما نمایش دهند، استفاده از این متن تستی می تواند سرعت پیشرفت پروژه را افزایش دهد، و طراحان به جای تایپ.</p>
-                                    <p> این یک نوشته آزمایشی است که به طراحان و برنامه نویسان کمک میکند تا این عزیزان با بهره گیری از این نوشته تستی و آزمایشی بتوانند نمونه تکمیل شده از پروژه و طرح خودشان را به کارفرما نمایش دهند، استفاده از این متن تستی می تواند سرعت پیشرفت پروژه را افزایش دهد، و طراحان به جای تایپ و نگارش متن می توانند تنها با یک کپی و پست این متن را در کادرهای مختلف جایگزین نمائید. این نوشته توسط سایت لورم ایپسوم فارسی نگاشته شده است.</p>
+                                    <?php the_content();?>
+
                                 </div>
                                 <div class="post-footer">
-                                    <div class="post-tags"><a href="#">زندگی</a><a href="#">موزیک</a><a href="#">اخبار</a><a href="#">سفر</a></div>
+                                    <div class="post-tags">
+                                        <?php the_tags();?>
+                                    </div>
                                 </div>
                             </div>
                         </article>
@@ -156,11 +145,18 @@
                                     <h6>دسته ها</h6>
                                 </div>
                                 <ul>
-                                    <li><a href="#">سفر <span class="float-right">112</span></a></li>
-                                    <li><a href="#">توسعه <span class="float-right">86</span></a></li>
-                                    <li><a href="#">ورزش <span class="float-right">10</span></a></li>
-                                    <li><a href="#">عکاسی <span class="float-right">144</span></a></li>
-                                    <li><a href="#">وردپرس <span class="float-right">18</span></a></li>
+                                    <?php
+                                        $categories = get_categories(array(
+                                            'hide_empty' => true, 
+                                        ));
+                                    
+                                    ?>
+                                    <?php
+                                        foreach ($categories as $category){?>
+
+
+                                    <li><a href="#"><?php $category->name?> <span class="float-right">112</span></a></li>
+<?php };?>
                                 </ul>
                             </aside>
 
@@ -170,18 +166,31 @@
                                     <h6>پست های اخیر</h6>
                                 </div>
                                 <ul>
+                                    <?php
+
+                                    $arraypost=array(
+                                        // 'post_type'=>'post',
+                                        'posts_per_page'=> 3,
+                                        
+                                    );
+
+                                    $query=new WP_Query($arraypost);
+
+
+                                    if ( $query->have_posts() ) :
+                                        while ( $query->have_posts() ) : $query->the_post();
+
+?>
                                     <li class="clearfix">
-                                        <div class="wi"><a href="blog-details.html"><img src="assets/img/blog/1.jpg" alt="recent post" class="img-fluid rounded" /></a></div>
-                                        <div class="wb"><a href="blog-details.html">میزبانی اشتراکی چیست؟.</a><span class="post-date">16 مهر، 1402</span></div>
+                                        <div class="wi"><a href="blog-details.html">
+                                        <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid rounded'])?>
+                                        </a></div>
+                                        <div class="wb"><a href="<?php the_permalink()?>"><?php the_title()?></a><span class="post-date"><?php the_date()?></span></div>
                                     </li>
-                                    <li class="clearfix">
-                                        <div class="wi"><a href="blog-details.html"><img src="assets/img/blog/2.jpg" alt="recent post" class="img-fluid rounded" /></a></div>
-                                        <div class="wb"><a href="blog-details.html">میزبانی اشتراکی چیست؟.</a><span class="post-date">16 مهر، 1402</span></div>
-                                    </li>
-                                    <li class="clearfix">
-                                        <div class="wi"><a href="blog-details.html"><img src="assets/img/blog/3.jpg" alt="recent post" class="img-fluid rounded" /></a></div>
-                                        <div class="wb"><a href="blog-details.html">میزبانی اشتراکی چیست؟.</a><span class="post-date">16 مهر، 1402</span></div>
-                                    </li>
+<?php
+endwhile;
+endif;
+?>
                                 </ul>
                             </aside>
 
