@@ -35,7 +35,6 @@
                                 <li class="list-inline-item">
                                     <a href="tell:888-1234567"><span class="fas fa-phone mr-2"></span> پشتیبانی فنی 24/7</a>
                                 </li>
-                                <li class="list-inline-item"><a href="#"><span class="fas fa-comments mr-2"></span> گفتگوی زنده</a></li>
                             </ul>
                         </div>
                     </div>
@@ -213,7 +212,7 @@
 
                             <!--about start-->
                             <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px" data-position="right">
-                                <a id="aboutMegaMenu" class="nav-link custom-nav-link " href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">درباره</a>
+                                <a id="aboutMegaMenu" class="nav-link custom-nav-link " href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">درباره ما </a>
 
                             </li>
                             <!--about end-->
