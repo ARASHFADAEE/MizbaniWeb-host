@@ -55,4 +55,71 @@ function custom_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'custom_excerpt_more');
 
+// add wp host post type
+function post_type_wp_host() {
+    $labels = array(
+        'name'               => __( 'هاست وردپرس' ),
+        'singular_name'      => __( 'هاست وردپرس' ),
+        'menu_name'          => __( 'هاست وردپرس' ),
+        'name_admin_bar'     => __( 'هاست وردپرس' ),
+        'add_new'            => __( ' افزودن جدید' ),
+        'add_new_item'       => __( 'پست مخصوص هاست وردپرسی' ),
+        'new_item'           => __( 'پست جدید' ),
+        'edit_item'          => __( 'ویرایش هاست وردپرس' ),
+        'view_item'          => __( 'مشاهده هاست وردپرس' ),
+        'all_items'          => __( 'همه هاست وردپرس ها' ),
+        'search_items'       => __( 'جستجو در بین هاست وردپرس ها' ),
+        'parent_item_colon'  => __( 'مادر' ),
+        'not_found'          => __( 'مطلب یافت نشد' ),
+        'not_found_in_trash' => __( 'مطلب در زباله دان یافت نشد' )
+    );
+    $args = array(
+        'labels'             => $labels,
+        'description'        => __( 'Description.', 'your-plugin-textdomain' ),
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
 
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'taxonomies' => array('post_tag'),
+        //'taxonomies' => array('post_tag'),
+        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+    );
+    register_post_type( 'wphost', $args );
+}
+add_action( 'init', 'post_type_wp_host' );
+
+
+
+
+function create_taxonomies_for_ausbildung() {
+    $labels = array(
+        'name'              => _x( 'دسته بندی', 'دسته بندی' ),
+        'singular_name'     => _x( 'دسته بندی پست ها ', 'دسته بندی' ),
+        'search_items'      => __( 'جستجویه دسته' ),
+        'all_items'         => __( 'تمام دسته ها' ),
+        'parent_item'       => __( 'زیر دسته' ),
+        'parent_item_colon' => __( 'Parent Genre:' ),
+        'edit_item'         => __( 'ویرایش دسته' ),
+        'update_item'       => __( 'بروزرسانی دسته' ),
+        'add_new_item'      => __( 'افزودن دسته جدید' ),
+        'new_item_name'     => __( 'نام جدید دسته' ),
+        'menu_name'         => __( 'دسته بندی' ),
+    );
+
+    $ar = array(
+        'hierarchical'      => true,
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+    );
+
+    register_taxonomy( 'wp-host', 'wphost' , $ar );
+}
+add_action( 'init', 'create_taxonomies_for_ausbildung');
