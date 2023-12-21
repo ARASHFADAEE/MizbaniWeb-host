@@ -8,13 +8,9 @@
                         <div class="row footer-top-wrap">
                             <div class="col-12">
                                 <div class="footer-nav-wrap text-white">
-                                    <h4 class="text-white">قدرت گرفته از</h4>
-                                    <ul class="list-inline security-icon-list">
-                                        <li class="list-inline-item"><img src="assets/img/mcafee-logo.png" width="110" alt="security" class="img-fluid" /></li>
-                                        <li class="list-inline-item"><img src="assets/img/norton-logo.png" width="110" alt="security" class="img-fluid" /></li>
-                                        <li class="list-inline-item"><img src="assets/img/accredited-logo.png" width="110" alt="security" class="img-fluid" /></li>
-                                        <li class="list-inline-item"><img src="assets/img/secured-logo.png" width="110" alt="security" class="img-fluid" /></li>
-                                    </ul>
+                                    <h4 class="text-white">میزبانی وب</h4>
+									<P>میزبانی وب با پشتیبانی 24 ساعته فنی حتی در ایام تعطیل در کنار شماست</P>
+
                                 </div>
                             </div>
                         </div>
@@ -23,44 +19,41 @@
                         <div class="row footer-top-wrap">
                             <div class="col-md-3 col-sm-6">
                                 <div class="footer-nav-wrap text-white">
-                                    <h4 class="text-white">محصولات</h4>
+                                    <h4 class="text-white">خدمات میزبانی وب</h4>
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">میزبانی وردپرس</a>
+                                            <a class="nav-link" href="https://client.mizbaniweb.com/index.php/store/hst-wrdprs-mmwly"> هاست وردپرس معمولی NVME</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">میزبانی اشتراکی</a>
+                                            <a class="nav-link" href="https://client.mizbaniweb.com/index.php/store/myzbny-wb-hrfh-y">  هاست حرفه ای وردپرس NVME </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">سرور مجازی</a>
+                                            <a class="nav-link" href="https://client.mizbaniweb.com/index.php/store/woocommercet">  هاست ووکامرس NVME </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">میزبانی اختصاصی</a>
+                                            <a class="nav-link" href="https://client.mizbaniweb.com/index.php/store/hostdownloadhdd">  هاست دانلود NVME </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">جستجوی دامنه</a>
+                                            <a class="nav-link" href="#"> هاست ایران  بزودی </a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
                                 <div class="footer-nav-wrap text-white">
-                                    <h4 class="text-white">شرکت</h4>
+                                    <h4 class="text-white">سرور مجازی </h4>
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">درباره ما</a>
+                                            <a class="nav-link" href="https://client.mizbaniweb.com/index.php/store/srwr-mjzy-khlwd-htznr-anlyn"> سرور مجازی کلود HETZNER</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">شرکا</a>
+                                            <a class="nav-link" href="#"> سرور مجازی OVH بزودی  </a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">وبلاگ</a>
+                                       
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">فرصت های شغلی</a>
+                                     
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">شبکه های اجتماعی</a>
+                                        
                                         </li>
                                     </ul>
 
@@ -68,22 +61,14 @@
                             </div>
                             <div class="col-md-3 col-sm-6">
                                 <div class="footer-nav-wrap text-white">
-                                    <h4 class="text-white">قوانین</h4>
+                                    <h4 class="text-white">سروراختصاصی </h4>
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">اطلاعات حقوقی</a>
+                                            <a class="nav-link" href="https://client.mizbaniweb.com/index.php/store/gmyhetzner"> سرور اختصاصیHETZNER</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">حفظ حریم خصوصی</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">گزارش سو استفاده</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">شرایط استفاده از خدمات</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">بررسی WHOIS</a>
+                                            <a class="nav-link" href="https://client.mizbaniweb.com/index.php/store/server-dell">  سرور اختصاصی Dell </a>
+                                
                                         </li>
                                     </ul>
                                 </div>
@@ -93,10 +78,10 @@
                                     <h4 class="text-white">پشتیبانی</h4>
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">ارتباط با ما</a>
+                                            <a class="nav-link" href="https://client.mizbaniweb.com/contact.php">ارتباط با ما</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">آموزش</a>
+                                            <a class="nav-link" href="https://client.mizbaniweb.com/index.php/announcements/13/%D9%82%D9%88%D8%A7%D9%86%DB%8C%D9%86-%D9%88-%D9%85%D9%82%D8%B1%D8%A7%D8%B1%D8%AA.html">قوانین و مقررات</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">انجمن</a>
@@ -122,12 +107,12 @@
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-md-5 col-lg-5">
-                        <p class="copyright-text pb-0 mb-0">کپی رایت <span class="date"></span> © همه حقوق محفوظ است <a href="https://rtl-theme.com/author/chaveamin" target="_blank">دیزاینستا</a>
+                        <p class="copyright-text pb-0 mb-0">کپی رایت <span class="date"></span> © همه حقوق محفوظ است <a href="https://mizbaniweb.com" target="_blank">میزبانی وب</a>
                         </p>
                     </div>
                     <div class="col-md-7 col-lg-6">
                         <div class="payment-method text-right">
-                            <ul class="list-inline">
+<!--                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <img src="assets/img/payment-amex.svg" alt="amex" width="50" />
                                 </li>
@@ -143,7 +128,7 @@
                                 <li class="list-inline-item">
                                     <img src="assets/img/payment-bitcoin.svg" alt="bitcoin" width="50" />
                                 </li>
-                            </ul>
+                            </ul> -->
                         </div>
                     </div>
                 </div>

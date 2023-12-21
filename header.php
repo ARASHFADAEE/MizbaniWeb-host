@@ -41,8 +41,8 @@
                     <div class="col-md-4 col-lg-4">
                         <div class="topbar-text">
                             <ul class="list-inline text-right">
-                                <li class="list-inline-item"><a href="#"><span class="fas fa-user mr-2"></span> ورود</a></li>
-                                <li class="list-inline-item"><a href="#"><span class="fas fa-lock mr-2"></span> ثبت نام</a>
+                                <li class="list-inline-item"><a href="https://client.mizbaniweb.com/index.php/login"><span class="fas fa-user mr-2"></span> ورود</a></li>
+                                <li class="list-inline-item"><a href="https://client.mizbaniweb.com/register.php"><span class="fas fa-lock mr-2"></span> ثبت نام</a>
                                 </li>
                             </ul>
                         </div>
@@ -58,7 +58,8 @@
                 <nav class="js-mega-menu navbar navbar-expand-md header-nav">
 
                     <!--logo start-->
-                    <a class="navbar-brand" href="<?php echo get_home_url() ?>"><img src="<?php echo get_template_directory_uri()?>/assets/img/logo-color.png" width="120" alt="logo" class="img-fluid" /></a>
+                    <a class="navbar-brand" href="<?php echo get_home_url() ?>"><img src="https://blog.mizbaniweb.com/wp-content/uploads/2023/11/mizbaniweb-site.png" width="120" alt="logo" class="img-fluid" /></a>
+
                     <!--logo end-->
 
                     <!--responsive toggle button start-->
@@ -209,31 +210,29 @@
                             </li>
                             <!--hosting end-->
                             <!-- blog -->
-                            <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px" data-position="right">
-                                <a id="aboutMegaMenu" class="nav-link custom-nav-link " href="<?php echo get_home_url()?>/blog" aria-haspopup="true" aria-expanded="false">وبلاگ میزبانی وب</a>
+						<?php
+	
+$menu_locations = get_nav_menu_locations();
+$menu_id = $menu_locations['main-menu'];
+$menu_items = wp_get_nav_menu_items($menu_id);
 
-                            </li>
-                            <!-- blog -->
+// چک کردن برای وجود آیتم‌های منو
+if ($menu_items) {
+    foreach ($menu_items as $menu_item) {
+        echo '<li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px" data-position="right">';
+        echo '<a id="aboutMegaMenu" class="nav-link custom-nav-link " href="' . $menu_item->url . '" aria-haspopup="true" aria-expanded="false" >' . $menu_item->title . '</a>';
+        echo '</li>';
+    }
+}
+
+	
+	
+	
+	?>
+						
                             
-                            <!-- role -->
-                            <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px" data-position="right">
-                                <a id="aboutMegaMenu" class="nav-link custom-nav-link " href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">قوانین و مقررات</a>
 
-                            </li>
-                            <!-- role -->
 
-                            <!--about start-->
-                            <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px" data-position="right">
-                                <a id="aboutMegaMenu" class="nav-link custom-nav-link " href="<?php echo get_home_url()?>/about-us" aria-haspopup="true" aria-expanded="false">درباره ما </a>
-
-                            </li>
-                            <!--about end-->
-                            
-                            <!-- contact us  -->
-                            <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px" data-position="right">
-                                <a id="aboutMegaMenu" class="nav-link custom-nav-link " href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">تماس با ما</a>
-
-                            </li>
                             <!-- contact us -->
 
 
