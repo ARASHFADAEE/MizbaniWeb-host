@@ -38,7 +38,7 @@
                                     <ul class="post-meta">
                                         <li><?php the_date();?></li>
                                         <li><?php the_category();?></li>
-                                        <li><a href="#"><?php get_comments_number($post->ID)?> کامنت</a></li>
+                                        <li><a href="#"><?php echo get_comments_number($post->ID)?> کامنت</a></li>
                                     </ul>
                                 </div>
                                 <div class="post-content">
@@ -55,76 +55,9 @@
                         <!-- Post end-->
 
                         <!-- Comments area-->
-                        <div class="comments-area">
-                            <h5 class="comments-title">3 کامنت</h5>
-                            <div class="comment-list">
-                                <!-- Comment-->
-                                <div class="comment">
-                                    <div class="comment-author"><img class="avatar img-fluid rounded-circle" src="assets/img/client-2.jpg" alt="comment" /></div>
-                                    <div class="comment-body">
-                                        <div class="comment-meta">
-                                            <div class="comment-meta-author"><a href="#">جیسون فورد</a></div>
-                                            <div class="comment-meta-date"><a href="#">5 دی، 1400 در ساعت 4:51 ب.ظ</a></div>
-                                        </div>
-                                        <div class="comment-content">
-                                            <p>این یک نوشته آزمایشی است که به طراحان و برنامه نویسان کمک میکند تا این عزیزان با بهره گیری از این نوشته تستی و آزمایشی بتوانند نمونه تکمیل شده از پروژه و طرح خودشان را به کارفرما نمایش دهند، استفاده از این متن تستی می تواند سرعت پیشرفت پروژه را افزایش دهد، و طراحان به جای تایپ.</p>
-                                        </div>
-                                        <div class="comment-reply"><a href="#">پاسخ</a></div>
-                                    </div>
-                                    <!-- Subcomment-->
-                                    <div class="children">
-                                        <div class="comment">
-                                            <div class="comment-author"><img class="avatar img-fluid rounded-circle" src="assets/img/client-3.jpg" alt="comment" /></div>
-                                            <div class="comment-body">
-                                                <div class="comment-meta">
-                                                    <div class="comment-meta-author"><a href="#">هری بانسون</a></div>
-                                                    <div class="comment-meta-date"><a href="#">5 دی، 1400 در ساعت 4:51 ب.ظ</a></div>
-                                                </div>
-                                                <div class="comment-content">
-                                                    <p> این یک نوشته آزمایشی است که به طراحان و برنامه نویسان کمک میکند تا این عزیزان با بهره گیری از این نوشته تستی و آزمایشی بتوانند نمونه تکمیل شده از پروژه و طرح خودشان را به کارفرما نمایش دهند، استفاده از این متن تستی می تواند سرعت پیشرفت پروژه را افزایش دهد.</p>
-                                                </div>
-                                                <div class="comment-reply"><a href="#">پاسخ</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Comment-->
-                                <div class="comment">
-                                    <div class="comment-author"><img class="avatar img-fluid rounded-circle" src="assets/img/client-4.jpg" alt="comment" /></div>
-                                    <div class="comment-body">
-                                        <div class="comment-meta">
-                                            <div class="comment-meta-author"><a href="#">هنری سویل</a></div>
-                                            <div class="comment-meta-date"><a href="#">5 دی، 1400 در ساعت 4:51 ب.ظ</a></div>
-                                        </div>
-                                        <div class="comment-content">
-                                            <p>این یک نوشته آزمایشی است که به طراحان و برنامه نویسان کمک میکند تا این عزیزان با بهره گیری از این نوشته تستی و آزمایشی بتوانند نمونه تکمیل شده از پروژه و طرح خودشان را به کارفرما نمایش دهند، استفاده از این متن تستی می تواند سرعت پیشرفت پروژه را افزایش دهد، و طراحان به جای تایپ.</p>
-                                        </div>
-                                        <div class="comment-reply"><a href="#">پاسخ</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comment-respond">
-                                <h5 class="comment-reply-title">ارسال نظر</h5>
-                                <p class="comment-notes">آدرس ایمیل شما منتشر نخواهد شد. فیلدهای الزامی مشخص شده اند</p>
-                                <form class="comment-form row">
-                                    <div class="form-group col-md-4">
-                                        <input class="form-control" type="text" placeholder="نام">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <input class="form-control" type="text" placeholder="ایمیل">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <input class="form-control" type="url" placeholder="شرکت">
-                                    </div>
-                                    <div class="form-group col-md-12">
-                                        <textarea class="form-control" rows="8" placeholder="نظر شما..."></textarea>
-                                    </div>
-                                    <div class="form-submit col-md-12">
-                                        <button class="btn primary-solid-btn" type="submit">ارسال نظر</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                        <?php comments_template(); ?>
+
+
                         <!-- Comments area end-->
                     </div>
                     <div class="col-lg-4 col-md-4">
