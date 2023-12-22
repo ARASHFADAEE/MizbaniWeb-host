@@ -97,6 +97,22 @@
                                 </tr>
                             </thead>
                             <tbody>
+
+                            <?php 
+                            
+                            $query= new WP_Query( [
+
+                                'post_type'=>'wphost',
+                            ]);                         
+                            
+                            ?>
+
+                            <?php
+
+if ( $query->have_posts() ) :
+
+    while($query->$post):
+    ?>
                                 <tr class="vps-pricing-row border-accent-primary">
                                     <td data-value="CPU">1</td>
                                     <td data-value="حافظه">2 گیگابایت</td>
@@ -114,7 +130,7 @@
                                     <td data-value="پهنای باند">1000 گیگابایت</td>
                                     <td data-value="قیمت">
                                         <p>
-                                            <span class="rate">390,000 تومانءءء<span>/ماهانه</span></span>
+                                            <span class="rate"><?php echo esc_html( get_field('price-host') ); ?> تومانءءء<span>/ماهانه</span></span>
                                             <span class="pricing-onsale">پرفروش - <span class="badge color-3 color-3-bg">30% تخفیف</span></span>
                                         </p>
                                     </td>
@@ -122,125 +138,11 @@
                                         <a href="" class="btn primary-solid-btn">خرید</a>
                                     </td>
                                 </tr>
-                                <tr class="vps-pricing-row border-red-themes">
-                                    <td data-value="CPU">2</td>
-                                    <td data-value="حافظه">4 گیگابایت</td>
-                                    <td data-value="قدرت"><span>4.8GHz<span class="cpu-core">2 هسته</span></span></td>
-                                    <td data-value="فضا">40 گیگابایت</td>
-                                    <td data-value="امتیاز">
-                                        <div class="score-bar-wrap">
-                                            <span class="geekbench-score">5363</span>
-                                            <div class="progress w-100 score-bar-item">
-                                                <div class="progress-bar primary-bg" role="progressbar" style="width: 40%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">40%
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td data-value="پهنای باند">2000 گیگابایت</td>
-                                    <td data-value="قیمت">
-                                        <p>
-                                            <span class="rate">85,000 تومانءءء<span>/ماهانه</span></span>
-                                            <span class="pricing-onsale">پرفروش - <span class="badge color-1 color-1-bg">50% تخفیف</span></span>
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="" class="btn primary-solid-btn">خرید</a>
-                                    </td>
-                                </tr>
-                                <tr class="vps-pricing-row border-orange-themes">
-                                    <td data-value="CPU">3</td>
-                                    <td data-value="حافظه">6 گیگابایت</td>
-                                    <td data-value="قدرت"><span>7.2GHz<span class="cpu-core">3 هسته</span></span></td>
-                                    <td data-value="فضا">60 گیگابایت</td>
-                                    <td data-value="امتیاز">
-                                        <div class="score-bar-wrap">
-                                            <span class="geekbench-score">7545</span>
-                                            <div class="progress w-100 score-bar-item">
-                                                <div class="progress-bar primary-bg" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td data-value="پهنای باند">3000 گیگابایت</td>
-                                    <td data-value="قیمت">
-                                        <p>
-                                            <span class="rate">120,000 تومانءءء<span>/ماهانه</span></span>
-                                            <span class="pricing-onsale">پرفروش - <span class="badge color-3 color-3-bg">10% تخفیف</span></span>
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="" class="btn primary-solid-btn">خرید</a>
-                                    </td>
-                                </tr>
-                                <tr class="vps-pricing-row border-yellow-themes">
-                                    <td data-value="CPU">4</td>
-                                    <td data-value="حافظه">8 گیگابایت</td>
-                                    <td data-value="قدرت"><span>9.6GHz<span class="cpu-core">4 هسته</span></span></td>
-                                    <td data-value="فضا">80 گیگابایت</td>
-                                    <td data-value="امتیاز">
-                                        <div class="score-bar-wrap">
-                                            <span class="geekbench-score">8953</span>
-                                            <div class="progress w-100 score-bar-item">
-                                                <div class="progress-bar primary-bg" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td data-value="پهنای باند">4000 گیگابایت</td>
-                                    <td data-value="قیمت">
-                                        <p><span class="rate">150,000 تومانءءء<span>/ماهانه</span></span><span class="pricing-onsale">پرفروش - <span
-                                        class="badge color-3 color-3-bg">30% تخفیف</span></span></p>
-                                    </td>
-                                    <td>
-                                        <a href="" class="btn primary-solid-btn">خرید</a>
-                                    </td>
-                                </tr>
-                                <tr class="vps-pricing-row border-blue-themes">
-                                    <td data-value="CPU">6</td>
-                                    <td data-value="حافظه">12 گیگابایت</td>
-                                    <td data-value="قدرت"><span>14.4GHz<span class="cpu-core">6 هسته</span></span></td>
-                                    <td data-value="فضا">120 گیگابایت</td>
-                                    <td data-value="امتیاز">
-                                        <div class="score-bar-wrap">
-                                            <span class="geekbench-score">10789</span>
-                                            <div class="progress w-100 score-bar-item">
-                                                <div class="progress-bar primary-bg" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td data-value="پهنای باند">6000 گیگابایت</td>
-                                    <td data-value="قیمت">
-                                        <p><span class="rate">230,000 تومانءءء<span>/ماهانه</span></span><span class="pricing-onsale">پرفروش - <span
-                                        class="badge color-5 color-5-bg">Save 40%</span></span></p>
-                                    </td>
-                                    <td>
-                                        <a href="" class="btn primary-solid-btn">خرید</a>
-                                    </td>
-                                </tr>
-                                <tr class="vps-pricing-row border-lime-themes">
-                                    <td data-value="CPU">8</td>
-                                    <td data-value="حافظه">16 گیگابایت</td>
-                                    <td data-value="قدرت"><span>19.2GHz<span class="cpu-core">8 هسته</span></span></td>
-                                    <td data-value="فضا">160 گیگابایت</td>
-                                    <td data-value="امتیاز">
-                                        <div class="score-bar-wrap">
-                                            <span class="geekbench-score">12632</span>
-                                            <div class="progress w-100 score-bar-item">
-                                                <div class="progress-bar primary-bg" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td data-value="پهنای باند">8000 گیگابایت</td>
-                                    <td data-value="قیمت">
-                                        <p><span class="rate">96,000 تومانءءء<span>/ماهانه</span></span><span class="pricing-onsale">پرفروش - <span
-                                        class="badge color-3 color-3-bg">10% تخفیف</span></span></p>
-                                    </td>
-                                    <td>
-                                        <a href="" class="btn primary-solid-btn">خرید</a>
-                                    </td>
-                                </tr>
+                                   <?php
+                                endwhile;
+                            endif;
+
+                                   ?>
                             </tbody>
                         </table>
                     </div>
