@@ -116,11 +116,11 @@ if ( $query->have_posts() ) :
                                 <tr class="vps-pricing-row border-accent-primary">
                                 <td data-value="پلن"><?php echo esc_html( get_field('plan') ); ?></td>
                                     <td data-value="CPU"><?php echo esc_html( get_field('cpu') ); ?></td>
-                                    <td data-value="رم"><?php echo esc_html( get_field('ram') ); ?> گیگابایت</td>
-                                    <td data-value="قدرت سی پی یو"><span><?php echo esc_html( get_field('cpu-power') ); ?>GHz</td>
-                                    <td data-value="پورت شبکه"><span><?php echo esc_html( get_field('port') ); ?> GB</td>
-                                    <td data-value="هارد"><?php echo esc_html( get_field('hard') ); ?> گیگابایت</td>
-                                    <td data-value="پهنای باند"><?php echo esc_html( get_field('Band-width') ); ?> گیگابایت</td>
+                                    <td data-value="رم"><?php echo esc_html( get_field('ram') ); ?> </td>
+                                    <td data-value="قدرت سی پی یو"><span><?php echo esc_html( get_field('cpu-power') ); ?></td>
+                                    <td data-value="پورت شبکه"><span><?php echo esc_html( get_field('port') ); ?></td>
+                                    <td data-value="هارد"><?php echo esc_html( get_field('hard') ); ?> </td>
+                                    <td data-value="پهنای باند"><?php echo esc_html( get_field('Band-width') ); ?></td>
                                     <td data-value="قیمت">
                                         <p>
                                             <span class="rate"><?php echo esc_html( get_field('price') ); ?> تومانءءء<span>/ماهانه</span></span>
