@@ -140,29 +140,6 @@ if ( $query->have_posts() ) :
                         </table>
                     </div>
                 </div>
-                <div class="row justify-content-center d-none d-md-block d-lg-block">
-                    <div class="col-md-10 col-lg-12">
-                        <div class="payment-method text-center">
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <img src="assets/img/payment-amex.svg" alt="amex" width="50">
-                                </li>
-                                <li class="list-inline-item">
-                                    <img src="assets/img/payment-visa.svg" alt="visa" width="50">
-                                </li>
-                                <li class="list-inline-item">
-                                    <img src="assets/img/payment-mastercard.svg" alt="mastercard" width="50">
-                                </li>
-                                <li class="list-inline-item">
-                                    <img src="assets/img/payment-paypal.svg" alt="paypal" width="50">
-                                </li>
-                                <li class="list-inline-item">
-                                    <img src="assets/img/payment-bitcoin.svg" alt="bitcoin" width="50">
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <!--vps hosting pricing plane end-->
