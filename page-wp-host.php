@@ -87,11 +87,12 @@
                         <table class="table vps-hosting-pricing-table">
                             <thead>
                                 <tr>
+                                    <th>پلن</th>
                                     <th>سی پی یو</th>
-                                    <th>حافظه</th>
+                                    <th>رم</th>
                                     <th>قدرت سی پی یو</th>
-                                    <th>فضا</th>
-                                    <th>امتیاز</th>
+                                    <th>پورت شبکه</th>
+                                    <th>هارد</th>
                                     <th>پهنای باند</th>
                                     <th colspan="2">قیمت</th>
                                 </tr>
@@ -110,23 +111,15 @@
                             <?php
 
 if ( $query->have_posts() ) :
+    while ( $query->have_posts() ) : $query->the_post(); ?>
 
-    while($query->$post):
-    ?>
                                 <tr class="vps-pricing-row border-accent-primary">
+                                <td data-value="پلن">wphq</td>
                                     <td data-value="CPU">1</td>
-                                    <td data-value="حافظه">2 گیگابایت</td>
-                                    <td data-value="قدرت"><span>2.4GHz<span class="cpu-core">1 هسته</span></span></td>
-                                    <td data-value="فضا">20 گیگابایت</td>
-                                    <td data-value="امتیاز">
-                                        <div class="score-bar-wrap">
-                                            <span class="geekbench-score">3513</span>
-                                            <div class="progress w-100 score-bar-item">
-                                                <div class="progress-bar primary-bg" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
+                                    <td data-value="رم">2 گیگابایت</td>
+                                    <td data-value="قدرت سی پی یو"><span>2.4GHz</td>
+                                    <td data-value="پورت شبکه"><span>2.4 GB</td>
+                                    <td data-value="هارد">20 گیگابایت</td>
                                     <td data-value="پهنای باند">1000 گیگابایت</td>
                                     <td data-value="قیمت">
                                         <p>
