@@ -83,7 +83,7 @@ function post_type_wp_host() {
         'query_var'          => true,
 
         'capability_type'    => 'post',
-        'has_archive'        => true,
+        'has_archive'        => false,
         'hierarchical'       => false,
         'menu_position'      => null,
         'taxonomies' => array('post_tag'),
@@ -96,7 +96,57 @@ add_action( 'init', 'post_type_wp_host' );
 
 
 
+//woocommerce post type
 
+
+function post_type_wc_host() {
+    $labels = array(
+        'name'               => __( 'هاست ووکامرس' ),
+        'singular_name'      => __( 'هاست ووکامرس' ),
+        'menu_name'          => __( 'هاست ووکامرس' ),
+        'name_admin_bar'     => __( 'هاست ووکامرس' ),
+        'add_new'            => __( ' افزودن جدید' ),
+        'add_new_item'       => __( 'پست مخصوص هاست ووکامرسی' ),
+        'new_item'           => __( 'پست جدید' ),
+        'edit_item'          => __( 'ویرایش هاست ووکامرس' ),
+        'view_item'          => __( 'مشاهده هاست ووکامرس' ),
+        'all_items'          => __( 'همه هاست ووکامرس ها' ),
+        'search_items'       => __( 'جستجو در بین هاست ووکامرس ها' ),
+        'parent_item_colon'  => __( 'مادر' ),
+        'not_found'          => __( 'مطلب یافت نشد' ),
+        'not_found_in_trash' => __( 'مطلب در زباله دان یافت نشد' )
+    );
+    $args = array(
+        'labels'             => $labels,
+        'description'        => __( 'Description.', 'your-plugin-textdomain' ),
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+
+        'capability_type'    => 'post',
+        'has_archive'        => false,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'taxonomies' => array('post_tag'),
+        //'taxonomies' => array('post_tag'),
+        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+    );
+    register_post_type( 'wchost', $args );
+}
+add_action( 'init', 'post_type_wc_host' );
+
+
+
+//end woocommerce post type
+
+
+
+
+
+
+//wp host category
 function create_taxonomies_for_ausbildung() {
     $labels = array(
         'name'              => _x( 'دسته بندی', 'دسته بندی' ),
@@ -123,3 +173,35 @@ function create_taxonomies_for_ausbildung() {
     register_taxonomy( 'wp-host', 'wphost' , $ar );
 }
 add_action( 'init', 'create_taxonomies_for_ausbildung');
+
+
+
+
+
+//wc host category
+function create_taxonomies_for_wc() {
+    $labels = array(
+        'name'              => _x( 'دسته بندی', 'دسته بندی' ),
+        'singular_name'     => _x( 'دسته بندی پست ها ', 'دسته بندی' ),
+        'search_items'      => __( 'جستجویه دسته' ),
+        'all_items'         => __( 'تمام دسته ها' ),
+        'parent_item'       => __( 'زیر دسته' ),
+        'parent_item_colon' => __( 'Parent Genre:' ),
+        'edit_item'         => __( 'ویرایش دسته' ),
+        'update_item'       => __( 'بروزرسانی دسته' ),
+        'add_new_item'      => __( 'افزودن دسته جدید' ),
+        'new_item_name'     => __( 'نام جدید دسته' ),
+        'menu_name'         => __( 'دسته بندی' ),
+    );
+
+    $ar = array(
+        'hierarchical'      => true,
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+    );
+
+    register_taxonomy( 'wc-host', 'wchost' , $ar );
+}
+add_action( 'init', 'create_taxonomies_for_wc');
