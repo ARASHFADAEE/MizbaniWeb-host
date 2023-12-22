@@ -1,6 +1,38 @@
 <?php get_header();?>
     <div class="main">
 
+        <!--page header section start-->
+        <section class="page-header-section ptb-100 gradient-bg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-7 col-lg-6">
+                        <div class="page-header-content text-white">
+                            <h1 class="text-white mb-2">هاست وردپرس</h1>
+                            <p class="lead">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--page header section end-->
+
+        <!--breadcrumb bar start-->
+        <div class="breadcrumb-bar py-3 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="custom-breadcrumb">
+                            <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0 pl-0">
+                                <li class="list-inline-item breadcrumb-item"><a href="#">خانه</a></li>
+                                <li class="list-inline-item breadcrumb-item"><a href="#">صفحات جانبی</a></li>
+                                <li class="list-inline-item breadcrumb-item active">سرور مجازی</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--breadcrumb bar end-->
 
         <!--vps hosting pricing plane start-->
         <section class="vps-pricing-plane ptb-100 gray-light-bg">
