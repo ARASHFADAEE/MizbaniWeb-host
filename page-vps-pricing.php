@@ -7,7 +7,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-7 col-lg-6">
                         <div class="page-header-content text-white">
-                            <h1 class="text-white mb-2">هاست وردپرس</h1>
+                            <h1 class="text-white mb-2">سرور مجازی</h1>
                             <p class="lead">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی.</p>
                         </div>
                     </div>
