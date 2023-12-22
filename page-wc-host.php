@@ -7,7 +7,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-12 col-lg-9">
                         <div class="hero-content-wrap text-white text-center position-relative z-index">
-                            <h1 class="text-white">هاست وردپرس</h1>
+                            <h1 class="text-white">هاست ووکامرس</h1>
                             <p class="lead">ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی.</p>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-9 col-lg-8">
                         <div class="section-heading text-center mb-5">
-                            <h2>تعرفه های هاست وردپرس</h2>
+                            <h2>تعرفه های هاست ووکامرس</h2>
                             <p class="lead">ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی.</p>
                         </div>
                     </div>
@@ -103,7 +103,7 @@
                             
                             $query= new WP_Query( [
 
-                                'post_type'=>'wphost',
+                                'post_type'=>'wchost',
                             ]);                         
                             
                             ?>
