@@ -114,21 +114,21 @@ if ( $query->have_posts() ) :
     while ( $query->have_posts() ) : $query->the_post(); ?>
 
                                 <tr class="vps-pricing-row border-accent-primary">
-                                <td data-value="پلن">wphq</td>
-                                    <td data-value="CPU">1</td>
-                                    <td data-value="رم">2 گیگابایت</td>
-                                    <td data-value="قدرت سی پی یو"><span>2.4GHz</td>
-                                    <td data-value="پورت شبکه"><span>2.4 GB</td>
-                                    <td data-value="هارد">20 گیگابایت</td>
-                                    <td data-value="پهنای باند">1000 گیگابایت</td>
+                                <td data-value="پلن"><?php echo esc_html( get_field('plan') ); ?></td>
+                                    <td data-value="CPU"><?php echo esc_html( get_field('cpu') ); ?></td>
+                                    <td data-value="رم"><?php echo esc_html( get_field('ram') ); ?> گیگابایت</td>
+                                    <td data-value="قدرت سی پی یو"><span><?php echo esc_html( get_field('cpu-power') ); ?>GHz</td>
+                                    <td data-value="پورت شبکه"><span><?php echo esc_html( get_field('port') ); ?> GB</td>
+                                    <td data-value="هارد"><?php echo esc_html( get_field('hard') ); ?> گیگابایت</td>
+                                    <td data-value="پهنای باند"><?php echo esc_html( get_field('Band-width') ); ?> گیگابایت</td>
                                     <td data-value="قیمت">
                                         <p>
-                                            <span class="rate"><?php echo esc_html( get_field('price-host') ); ?> تومانءءء<span>/ماهانه</span></span>
-                                            <span class="pricing-onsale">پرفروش - <span class="badge color-3 color-3-bg">30% تخفیف</span></span>
+                                            <span class="rate"><?php echo esc_html( get_field('price') ); ?> تومانءءء<span>/ماهانه</span></span>
+                                            <!-- <span class="pricing-onsale">پرفروش - <span class="badge color-3 color-3-bg">30% تخفیف</span></span> -->
                                         </p>
                                     </td>
                                     <td>
-                                        <a href="" class="btn primary-solid-btn">خرید</a>
+                                        <a href="<?php echo esc_attr( get_field('buy-link') ); ?>" class="btn primary-solid-btn">خرید</a>
                                     </td>
                                 </tr>
                                    <?php
